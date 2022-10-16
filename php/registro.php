@@ -41,6 +41,6 @@ if($insertar) {
 
 
 //CERRAMOS CONEXION
-mysql_close($conexion);
+mysqli_close($conexion);
 
 ?>

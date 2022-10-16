@@ -22,7 +22,7 @@
 	</div>
 
 
-	<form action="" method="" class="formulario_ing">
+	<form action="../php/login.php" method="POST" class="formulario_ing">
 		<h2 class="info_h2">Acceder</h2>
 		<input type="text" class="formula" required placeholder="&#128113; usuario" name="usuario">
 		<input type="password" class="formula" required placeholder="&#128272; Contraseña" name="pass">

@@ -1,5 +1,7 @@
 <?php
+
 //CONEXION CON LA BASE DATOS
-$conexion = mysqli_connect('localhost','root','Contrase','web')
-dasdsadsadsadsadasdasdsadasdsadas
+
+$conexion = mysqli_connect('localhost','root','','web2');
+
 ?>
