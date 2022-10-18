@@ -12,6 +12,9 @@ session_start();
     <link rel="stylesheet" href="../css/parallax.css">
 </head>
 <body>
+<?php
+include("../php/sesion.php");
+?>
     <div class="fondo_user">
         <h1 class="bienvenido"> Bienvenido <?php echo $_SESSION['cliente'];  ?> </h1>
     </div>

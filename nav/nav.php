@@ -17,12 +17,11 @@
                     <li class="nav-item">
                         <a href="index.php" class="nav-link active" aria-current="page">Inicio</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">¡Hola <?php echo $_SESSION['cliente']; ?>! </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a href="usuario.php" class="dropdown-item">Perfil</a></li>
-                            <li><a href="../php/cerrar_sesion.php" class="dropdown-item">Cerrar sesion</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a href="acceder.php" class="nav-link">Entrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="registrar.php" class="nav-link">Registrarse</a>
                     </li>
                 </ul>
             </div>

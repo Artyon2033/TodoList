@@ -6,16 +6,9 @@
 	<link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-	<header class="cabezera">
-		<div class=" cab_nav">
-			<img src="../Imagenes/logotipo.png" alt="Logo" class="logo_img">
-			<h2 class="nomb_logo">Web</h2>
-			<ul>
-				<li><a href="index.php">Inicio</a></li>
-				<li class="marca"><a href="acceder.php">Entrar</a></li>
-			</ul>
-		</div>
-	</header>
+<?php
+include("../php/sesion.php");
+?>
 
     <div class="imagen_fondo">
 		<img src="../imagenes/fondo3.jpg" alt="fondo">
