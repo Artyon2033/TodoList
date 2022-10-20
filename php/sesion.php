@@ -1,5 +1,5 @@
 <?php
-error_reporting(0); //oculta las alertas de errores que  hay
+error_reporting(0); 
 $session_i = $_SESSION['cliente'];
 
 if($session_i == null || $session_i == "" ) {
