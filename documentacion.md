@@ -39,5 +39,5 @@ Luego procedderemos a crear los input para pedir que se registren el nombre de u
 
 -------------------------------------------
 Creamos la carpeta CSS donde estaran archivos css
-En esta carpeta están todos los estilos que le dimos a nuestras ventanas
+En esta carpeta están todos los estilos con el cual le daremos a nuestras ventanas
 1. Creamos la carpeta boostrap.min.css para crear interfaces web con css.
