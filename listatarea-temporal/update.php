@@ -3,10 +3,10 @@
 include("conexion.php");
 $con=conectar();
 
-$id_tarea=$_POST['id_tarea'];
+$cod_tarea=$_POST['cod_tarea'];
 $tarea=$_POST['tarea'];
 
-$sql="UPDATE tarea SET  id_tarea='$id_tarea',tarea='$tarea' WHERE id_tarea='$id_tarea'";
+$sql="UPDATE tarea SET tarea='$tarea' WHERE cod_tarea='$cod_tarea'";
 $query=mysqli_query($con,$sql);
 
     if($query){

@@ -2,9 +2,9 @@
     include("conexion.php");
     $con=conectar();
 
-$id_tarea=$_GET['id_tarea'];
+$id=$_GET['id'];
 
-$sql="SELECT * FROM tarea WHERE id_tarea='$id_tarea'";
+$sql="SELECT * FROM tarea WHERE cod_tarea='$id'";
 $query=mysqli_query($con,$sql);
 
 $row=mysqli_fetch_array($query);
@@ -25,7 +25,7 @@ $row=mysqli_fetch_array($query);
                 <div class="container mt-5">
                     <form action="update.php" method="POST">
                     
-                                <input type="hidden" name="id_tarea" value="<?php echo $row['id_tarea']  ?>">
+                                <input type="hidden" name="cod_tarea" value="<?php echo $row['cod_tarea']  ?>">
                                 <input type="text" class="form-control mb-3" name="tarea" placeholder="Tarea" value="<?php echo $row['tarea']  ?>">
                                 
                             <input type="submit" class="btn btn-primary btn-block" value="Actualizar">

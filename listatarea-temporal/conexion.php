@@ -2,9 +2,8 @@
 function conectar(){
     $host="localhost";
     $user="root";
-    $pass="";
-
-    $bd="web";
+    $pass="";  
+    $bd="tutorial";
 
     $con=mysqli_connect($host,$user,$pass);
 

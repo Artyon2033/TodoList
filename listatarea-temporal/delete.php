@@ -3,9 +3,11 @@
 include("conexion.php");
 $con=conectar();
 
-$id_tarea=$_GET['id_tarea'];
+//ELIMINAR UNA TAREA POR EL ID
 
-$sql="DELETE FROM tarea  WHERE id_tarea='$id_tarea'";
+$cod_tarea=$_GET['id'];
+
+$sql="DELETE FROM tarea  WHERE cod_tarea='$cod_tarea'";
 $query=mysqli_query($con,$sql);
 
     if($query){
