@@ -6,7 +6,7 @@ session_start();
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>MJX</title>
+	<title>TDL</title>
 	<link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>

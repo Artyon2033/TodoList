@@ -1,11 +1,12 @@
 <?php 
-    //INCLUYE LA CONEXION
+  
     include("conexion.php");
     $con=conectar();
+        
 
     $sql="SELECT *  FROM tarea";
     $query=mysqli_query($con,$sql);
-    // // $row = mysqli_fetch_array($query);
+    $row = mysqli_fetch_array($query);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,13 +19,18 @@
         
     </head>
     <body>
+
+        <?php
+            include("../php/sesion.php");
+        ?> 
+
             <div class="container mt-5">
                     <div class="row"> 
                         
                         <div class="col-md-3">
-                            <!-- FORMULARIO PARA INGRESAR DATOS DE LA TAREA -->
-                            <h1>LISTA DE TAREAS</h1>
-                            <!-- ENVIA EL BOTON A INSERTAR.PHP -->
+                           
+                            <h1>Hola <?php echo $_SESSION['cliente'] ?></h1>
+                            
                                 <form action="insertar.php" method="POST">
                                     <input type="text" class="form-control mb-3" name="cod_tarea" placeholder="Codigo">
                                     <input type="text" class="form-control mb-3" name="tarea" placeholder="Tarea">
@@ -53,7 +59,7 @@
                                                 <th><?php  echo $row['cod_tarea']?></th>
                                                 <th><?php  echo $row['tarea']?></th>   
                                                 <th><a href="actualizar.php?id=<?php echo $row['cod_tarea'] ?>" class="btn btn-info">Editar</a></th>
-                                                <th><a href="delete.php?id=<?php echo $row['cod_tarea'] ?>" class="btn btn-danger">Eliminar</a></th>                                        
+                                                <th><a href="eliminar.php?id=<?php echo $row['cod_tarea'] ?>" class="btn btn-danger">Eliminar</a></th>                                        
                                             </tr>
                                         <?php 
                                             }

@@ -23,7 +23,7 @@ $row=mysqli_fetch_array($query);
     </head>
     <body>
                 <div class="container mt-5">
-                    <form action="update.php" method="POST">
+                    <form action="modificar.php" method="POST">
                     
                                 <input type="hidden" name="cod_tarea" value="<?php echo $row['cod_tarea']  ?>">
                                 <input type="text" class="form-control mb-3" name="tarea" placeholder="Tarea" value="<?php echo $row['tarea']  ?>">

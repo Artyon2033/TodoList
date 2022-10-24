@@ -1,7 +1,7 @@
 <?php
 
 include("conexion.php");
-//VARIABLES 
+
 
 $usuario = $_POST["nombre"];
 $correo = $_POST["correo"];
@@ -13,7 +13,7 @@ $verificacion = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario = 
 $respuesta = mysqli_num_rows($verificacion);
 
 
-// RESTRICION DE USUARIO SOLO PUEDE  SER UN USUARIO CON ESE NOMBRE
+
 if($respuesta > 0) {
     echo '
         <script>
@@ -24,12 +24,12 @@ if($respuesta > 0) {
     exit;
 }
 
-//INSERCION DE DATOS EN LA TABLA
+
 
 $insertar = mysqli_query($conexion, "INSERT INTO usuarios (usuario, contraseña, correo, telefono, rol) VALUES ('$usuario','$pass','$correo','$telefono','cliente')");
 
 
-//CONDICION PARA REGISTRO DE USUARIO
+
 if($insertar) {
     echo '
     <script>
@@ -40,7 +40,7 @@ if($insertar) {
 }
 
 
-//CERRAMOS CONEXION
+
 mysqli_close($conexion);
 
 ?>

@@ -11,7 +11,7 @@
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a href="#" class="navbar-brand h1">Mejaalex</a>
+            <a href="#" class="navbar-brand h1">TodoList</a>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -29,7 +29,7 @@
     </nav>
 
 
-    <!-- usamos js para activar la funcion del menu con boostrap -->
+   
     <script src="../js/bootstrap.bundle.min.js"></script>
 
 

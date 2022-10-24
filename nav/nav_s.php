@@ -21,6 +21,7 @@
                         <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">¡Hola <?php echo $_SESSION['cliente']; ?>! </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a href="usuario.php" class="dropdown-item">Perfil</a></li>
+                            <li><a href="../listarea/index.php" class="dropdown-item">Mis Tareas</a></li>
                             <li><a href="../php/cerrar_sesion.php" class="dropdown-item">Cerrar sesion</a></li>
                         </ul>
                     </li>
@@ -30,7 +31,7 @@
     </nav>
 
 
-    <!-- usamos js para activar la funcion del menu con boostrap -->
+
     <script src="../js/bootstrap.bundle.min.js"></script>
 
 
